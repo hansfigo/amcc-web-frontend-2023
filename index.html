@@ -15,6 +15,7 @@
 
 
   <!-- CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Custom Style CSS -->
   <link rel="stylesheet" href="./css/style.css">
@@ -26,38 +27,38 @@
 
 <body>
   <!-- Navbar -->
-  <nav>
-    <!-- <div class="">
-      <a href="" class=""><img src="./images/logo.png" alt="Logo"></a>
-      <ul>
+  <nav class="sticky top-0 justify-center flex bg-white shadow">
+    <div class="container flex items-center justify-between px-8">
+      <a href="" class="h-20 w-20"><img src="./images/logo.png" alt="Logo"></a>
+      <ul class="flex hidden">
         <li><a href="">Products</a></li>
         <li><a href="">Pricing</a></li>
         <li><a href="">About</a></li>
         <li><a href="">FAQs</a></li>
       </ul>
-      <div class="navbar-hamburger">
+      <div class="cursor-pointer">
         <img src="./images/hamburger.svg" alt="">
       </div>
-    </div> -->
+    </div>
   </nav>
 
   <!-- Hero Sectopm -->
   <section>
-    <!-- <div class="">
-      <div class="">
-        <h1>Find Your Dream Shoes</h1>
-        <p>Find your shoes from our various collections. Here shoes are endless and profit is also endless</p>
-        <button class="">Explore more </button>
+    <div class="px-8 flex flex-col-reverse items-center">
+      <div class="text-center py-24">
+        <h1 class="text-8xl font-bold leading-[4.8rem]">Find Your Dream Shoes</h1>
+        <p class="py-8">Find your shoes from our various collections. Here shoes are endless and profit is also endless</p>
+        <button class="text-white bg-violet-500 px-8 py-4 rounded-lg hover:bg-violet-800 transition-all duration-500">Explore more </button>
       </div>
       <div class="">
-        <img src="./images/header.jpg" alt="header">
+        <img class="h-80 rounded-xl shadow-md" src="./images/header.jpg" alt="header">
       </div>
-    </div> -->
+    </div>
   </section>
 
   <!-- Our Collection -->
   <section>
-    <div class="container">
+    <!-- <div class="container">
       <h2 class="text-2xl font-semibold py-4">Our Collections</h2>
       <div x-data class="flex flex-wrap">
         <template x-for="_ in new Array(10).fill(null)">
@@ -68,17 +69,17 @@
               <div>Rp 230.000</div>
             </div>
           </div>
-        </template>
+        </template> -->
   </section>
 
   <!-- Footer -->
-  <footer>
-    <!-- <div class="">
+  <footer class="bg-violet-500 text-white px-8 py-8">
+    <div class="w-24">
       <img src="images/logo.png" alt="Logo Footer" height="50px" />
     </div>
-    <h1>ShoesStore.co</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo quo repellat iste impedit velit nulla? Aut
-      quidem harum optio! Error dolorem maxime aliquid enim, at ullam atque quod voluptates? Placeat?</p> -->
+    <h1 class="font-bold text-lg">ShoesStore.co</h1>
+    <p class="max-w-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo quo repellat iste impedit velit nulla? Aut
+      quidem harum optio! Error dolorem maxime aliquid enim, at ullam atque quod voluptates? Placeat?</p>
   </footer>
 </body>
 
